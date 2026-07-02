@@ -142,7 +142,7 @@ try {
 
     log.info(`Starting Salon and Spa Lead Finder (2-Step) for ${searchUrls.length} start URLs...`);
     
-    const initialRequests = searchUrls.map(url => ({ url, userData: { label: 'DIRECTORY' } }));
+    const initialRequests = searchUrls.map(req => ({ url: typeof req === 'string' ? req : req.url, userData: { label: 'DIRECTORY' } }));
     await crawler.addRequests(initialRequests);
     await crawler.run();
 

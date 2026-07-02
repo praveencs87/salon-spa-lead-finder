@@ -20,5 +20,18 @@
             "pricePerEvent": 0.002,
             "description": "Charged per Salon lead successfully extracted (includes deep-scraping)"
         }
-    ]
+    ],
+    "isPublic": true,
+    "seoTitle": "Salon and Spa Lead Finder | Apify Actor",
+    "seoDescription": "Extract B2B lead profiles of local salons/spas from directories and deep-scrape their websites for Instagram and WhatsApp contacts.",
+    "categories": [
+        "BUSINESS",
+        "DATA_EXTRACTION",
+        "LEAD_GENERATION"
+    ],
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 1800,
+        "memoryMbytes": 256
+    }
 }
