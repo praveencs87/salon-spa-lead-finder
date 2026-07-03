@@ -6,8 +6,8 @@
     "version": "0.0",
     "input": "./input_schema.json",
     "dockerfile": "../Dockerfile",
-    "minMemoryMbytes": 256,
-    "maxMemoryMbytes": 1024,
+    "minMemoryMbytes": 1024,
+    "maxMemoryMbytes": 4096,
     "pricingModel": "PAY_PER_EVENT",
     "pricingEvents": [
         {
@@ -32,6 +32,6 @@
     "defaultRunOptions": {
         "build": "latest",
         "timeoutSecs": 1800,
-        "memoryMbytes": 256
+        "memoryMbytes": 4096
     }
 }
