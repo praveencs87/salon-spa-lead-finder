@@ -1,37 +1,40 @@
 {
-    "actorSpecification": 1,
-    "name": "salon-spa-lead-finder",
-    "title": "Salon and Spa Lead Finder",
-    "description": "Extract B2B lead profiles of local salons/spas from directories and deep-scrape their websites for Instagram and WhatsApp contacts.",
-    "version": "0.0",
-    "input": "./input_schema.json",
-    "dockerfile": "../Dockerfile",
-    "minMemoryMbytes": 1024,
-    "maxMemoryMbytes": 4096,
-    "pricingModel": "PAY_PER_EVENT",
-    "pricingEvents": [
-        {
-            "eventName": "apify-actor-start",
-            "pricePerEvent": 0.00005,
-            "description": "Charged once when Actor starts"
-        },
-        {
-            "eventName": "lead-extracted",
-            "pricePerEvent": 0.002,
-            "description": "Charged per Salon lead successfully extracted (includes deep-scraping)"
-        }
-    ],
-    "isPublic": true,
-    "seoTitle": "Salon and Spa Lead Finder | Apify Actor",
-    "seoDescription": "Extract B2B lead profiles of local salons/spas from directories and deep-scrape their websites for Instagram and WhatsApp contacts.",
-    "categories": [
-        "BUSINESS",
-        "DATA_EXTRACTION",
-        "LEAD_GENERATION"
-    ],
-    "defaultRunOptions": {
-        "build": "latest",
-        "timeoutSecs": 1800,
-        "memoryMbytes": 4096
+  "actorSpecification": 1,
+  "name": "salon-spa-lead-finder",
+  "title": "Salon and Spa Lead Finder",
+  "description": "Extract B2B lead profiles of local salons/spas from directories and deep-scrape their websites for Instagram and WhatsApp contacts.",
+  "version": "0.0",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "minMemoryMbytes": 1024,
+  "maxMemoryMbytes": 4096,
+  "pricingModel": "PAY_PER_EVENT",
+  "pricingEvents": [
+    {
+      "eventName": "apify-actor-start",
+      "pricePerEvent": 0.00005,
+      "description": "Charged once when Actor starts"
+    },
+    {
+      "eventName": "lead-extracted",
+      "pricePerEvent": 0.002,
+      "description": "Charged per Salon lead successfully extracted (includes deep-scraping)"
     }
+  ],
+  "isPublic": true,
+  "seoTitle": "Salon and Spa Lead Finder | Apify Actor",
+  "seoDescription": "Extract B2B lead profiles of local salons/spas from directories and deep-scrape their websites for Instagram and WhatsApp contacts.",
+  "categories": [
+    "BUSINESS",
+    "DATA_EXTRACTION",
+    "LEAD_GENERATION"
+  ],
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 1800,
+    "memoryMbytes": 4096
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
 }
